@@ -2,7 +2,7 @@ import express from 'express';
 import { UserConroller } from '../controllers/user.controller';
 import { AuthorizeController } from '../controllers/authorize.controller';
 import { CategoryController } from '../controllers/category.controller';
-import { EAuthorize, ECategory, EUser } from '../services/method';
+import { EAuthorize, ECategory, EUser, } from '../services/method';
 
 const app = express();
 

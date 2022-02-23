@@ -6,10 +6,8 @@ import cookieParser from 'cookie-parser';
 import { initDB } from './models/app.entity';
 import { EMsg } from './services/message';
 import api from './api/api';
-import dotenv from 'dotenv';
 
 export let app = express();
-dotenv.config();
 app.use(bodyParser.json({ limit: '500mb' }));
 app.use(bodyParser.urlencoded({ limit: '500mb', extended: true, parameterLimit: 50000 }));
 
