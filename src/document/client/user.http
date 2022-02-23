@@ -1,0 +1,103 @@
+#login
+POST http://localhost:5000/login HTTP/1.1
+content-type: application/json
+Token: ""
+
+{
+    "username": "Nueng",
+    "password": "1234563"
+}
+###
+
+
+#add
+POST http://localhost:5000/addUser HTTP/1.1
+content-type: application/json
+Token: ""
+
+{
+    "name":"phone",
+    "username": "Eod2",
+    "password": "123456",
+    "phonenumber": "0205655665"
+}
+###
+
+
+#update
+POST http://localhost:5000/updateUser HTTP/1.1
+content-type: application/json
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoicGhvbmUiLCJ1c2VybmFtZSI6Ik51ZW5nIiwicGhvbmVudW1iZXIiOiIwMjA1NTY2Nzc4OCIsImlzQWN0aXZlIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIn0sImlhdCI6MTY0NTU4NDQyMSwiZXhwIjozNjAwMTY0NTU4NDQyMX0.ouLdwLIpE4D4sYj9bq465T3WX2p1rDwaRuTnRKtxsco
+
+
+{
+    "id":2,
+    "name":"phone",
+    "username": "Eod",
+    "password": "123456",
+    "phonenumber": "0205655665"
+}
+###
+
+
+#chagnePassword
+POST http://localhost:5000/changePassword HTTP/1.1
+content-type: application/json
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoicGhvbmUiLCJ1c2VybmFtZSI6Ik51ZW5nIiwicGhvbmVudW1iZXIiOiIwMjA1NTY2Nzc4OCIsImlzQWN0aXZlIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIn0sImlhdCI6MTY0NTU4NDQyMSwiZXhwIjozNjAwMTY0NTU4NDQyMX0.ouLdwLIpE4D4sYj9bq465T3WX2p1rDwaRuTnRKtxsco
+
+{
+    "id":2,
+    "oldPassword": "123456",
+    "newPassword": "1234563"
+}
+###
+
+
+#delete
+POST http://localhost:5000/deleteUser HTTP/1.1
+content-type: application/json
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoicGhvbmUiLCJ1c2VybmFtZSI6Ik51ZW5nIiwicGhvbmVudW1iZXIiOiIwMjA1NTY2Nzc4OCIsImlzQWN0aXZlIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIn0sImlhdCI6MTY0NTU4NDQyMSwiZXhwIjozNjAwMTY0NTU4NDQyMX0.ouLdwLIpE4D4sYj9bq465T3WX2p1rDwaRuTnRKtxsco
+
+{
+    "id":1
+}
+###
+
+
+
+#listOneById
+POST http://localhost:5000/listOneUser HTTP/1.1
+content-type: application/json
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoicGhvbmUiLCJ1c2VybmFtZSI6Ik51ZW5nIiwicGhvbmVudW1iZXIiOiIwMjA1NTY2Nzc4OCIsImlzQWN0aXZlIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIn0sImlhdCI6MTY0NTU4NDQyMSwiZXhwIjozNjAwMTY0NTU4NDQyMX0.ouLdwLIpE4D4sYj9bq465T3WX2p1rDwaRuTnRKtxsco
+
+{
+    "id":2
+
+}
+###
+
+
+#listAll
+POST http://localhost:5000/listAllUser HTTP/1.1
+content-type: application/json
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoicGhvbmUiLCJ1c2VybmFtZSI6Ik51ZW5nIiwicGhvbmVudW1iZXIiOiIwMjA1NTY2Nzc4OCIsImlzQWN0aXZlIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIn0sImlhdCI6MTY0NTU4NDQyMSwiZXhwIjozNjAwMTY0NTU4NDQyMX0.ouLdwLIpE4D4sYj9bq465T3WX2p1rDwaRuTnRKtxsco
+
+{
+}
+###
+
+
+#listPage
+POST http://localhost:5000/listPageUser HTTP/1.1
+content-type: application/json
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxLCJuYW1lIjoicGhvbmUiLCJ1c2VybmFtZSI6Ik51ZW5nIiwicGhvbmVudW1iZXIiOiIwMjA1NTY2Nzc4OCIsImlzQWN0aXZlIjpmYWxzZSwiY3JlYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMi0wMi0yM1QwMjozNTo0OS4wMDBaIn0sImlhdCI6MTY0NTU4NDQyMSwiZXhwIjozNjAwMTY0NTU4NDQyMX0.ouLdwLIpE4D4sYj9bq465T3WX2p1rDwaRuTnRKtxsco
+
+{
+    "page":1,
+    "limit":10,
+    "keyword":""
+
+}
+#keyword = username
+###
+
