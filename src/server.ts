@@ -8,6 +8,7 @@ import { EMsg } from './services/message';
 import api from './api/api';
 
 export let app = express();
+
 app.use(bodyParser.json({ limit: '500mb' }));
 app.use(bodyParser.urlencoded({ limit: '500mb', extended: true, parameterLimit: 50000 }));
 
